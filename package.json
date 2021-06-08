@@ -65,5 +65,7 @@
       "^@/(.+)": "<rootDir>/src/$1"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "styled-components": "^5.3.0"
+  }
 }
