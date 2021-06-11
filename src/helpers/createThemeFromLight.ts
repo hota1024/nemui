@@ -14,10 +14,10 @@ export const createThemeFromLight = (
     foreground: '#202020',
     palettes: {
       default: {
-        main: '#e0e0e0',
-        dark: '#0f0f0f',
-        light: 'white',
-        text: '#202020',
+        main: '#101010',
+        dark: '#000000',
+        light: '#303030',
+        text: 'white',
       },
       primary: {
         main: '#487fb0',
