@@ -46,7 +46,7 @@ const NemuiProvider: React.VFC<NemuiProviderProps> = ({
   }
 
   return (
-    <ThemeProvider theme={props.theme}>
+    <ThemeProvider theme={props.theme ?? createThemeFromLight()}>
       <NemuiContext.Provider value={value} children={children} />
     </ThemeProvider>
   )
