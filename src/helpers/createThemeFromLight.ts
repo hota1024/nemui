@@ -14,7 +14,7 @@ export const createThemeFromLight = (
     foreground: '#202020',
     palettes: {
       default: {
-        main: '#d1d1d1',
+        main: '#e0e0e0',
         dark: '#0f0f0f',
         light: 'white',
         text: '#202020',
