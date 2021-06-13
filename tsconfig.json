@@ -12,7 +12,8 @@
 		"jsx": "react",
 		"paths": {
 			"@/*": ["src/*"]
-		}
+		},
+		"typeRoots": ["src/types-definitions"]
   },
   "include": ["src/**/*.*", "tests/**/*.*"]
 }
