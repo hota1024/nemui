@@ -10,7 +10,7 @@ export const createThemeFromLight = (
 ): NemuiTheme => {
   const theme: NemuiTheme = {
     type: 'light',
-    background: '#f0f0f0',
+    background: '#fefefe',
     foreground: '#202020',
     palettes: {
       default: {
