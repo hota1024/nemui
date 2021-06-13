@@ -40,7 +40,6 @@ export function styledColor(
   if (context) {
     const color =
       context.theme?.palettes[context.color ?? 'default'][type] ?? ''
-    console.log(color)
     return color
   }
 
