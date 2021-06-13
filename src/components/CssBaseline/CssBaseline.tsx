@@ -10,6 +10,11 @@ export const CssBaseline = createGlobalStyle`
     font-weight: 400;
   }
 
+  body {
+    background: ${(p) => p.theme.background};
+    color: ${(p) => p.theme.foreground};
+  }
+
   * {
     box-sizing: border-box;
   }
