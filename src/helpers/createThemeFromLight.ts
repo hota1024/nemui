@@ -57,6 +57,8 @@ export const createThemeFromLight = (
       },
     },
     spacing: (factor) => `${factor}rem`,
+    shadow: (level) =>
+      `box-shadow: 0 ${level * 4}px ${level * 16}px rgba(0, 0, 0, 0.2);`,
   }
 
   return {

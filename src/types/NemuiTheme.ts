@@ -34,6 +34,11 @@ export type NemuiPalette = {
 export type NemuiSpacingFn = (factor: number) => string
 
 /**
+ * NemuiShadowFn type.
+ */
+export type NemuiShadowFn = (level: number) => string
+
+/**
  * NemuiColor type.
  */
 export type NemuiColor =
@@ -75,4 +80,9 @@ export type NemuiTheme = {
    * spacing function.
    */
   spacing: NemuiSpacingFn
+
+  /**
+   * shadow function.
+   */
+  shadow: NemuiShadowFn
 }
