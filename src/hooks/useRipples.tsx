@@ -20,7 +20,7 @@ type RippleState = {
 
 const rippleAnimation = keyframes`
 	to {
-		transform: scale(10);
+		transform: scale(15);
 		opacity: 0;
 	}
 `
@@ -32,7 +32,7 @@ const Ripple = styled.span`
   opacity: 0.1;
   border-radius: 50%;
   pointer-events: none;
-  animation: ${rippleAnimation} 1300ms;
+  animation: ${rippleAnimation} 2000ms cubic-bezier(0.5, 1, 0.5, 1);
 `
 
 /**
