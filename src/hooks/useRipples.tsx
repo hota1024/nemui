@@ -34,7 +34,8 @@ const Ripple = styled.span`
   opacity: 0.1;
   border-radius: 50%;
   pointer-events: none;
-  animation: ${rippleAnimation} 2000ms cubic-bezier(0.5, 1, 0.5, 1);
+  animation-name: ${rippleAnimation};
+  animation-timing-function: cubic-bezier(0.5, 1, 0.5, 1);
 `
 
 /**
@@ -59,6 +60,8 @@ export const useRipples = (): [AddRippleFn, React.ReactNodeArray] => {
       (Math.max(currentTarget.clientWidth, currentTarget.clientHeight) / size) *
       2
 
+    const animationDuration = 1000
+
     const ripple: RippleState = {
       key: event.timeStamp,
       style: {
@@ -67,6 +70,7 @@ export const useRipples = (): [AddRippleFn, React.ReactNodeArray] => {
         left: x - radius,
         top: y - radius,
         transform: `scale(${scale})`,
+        animationDuration: `${animationDuration}ms`,
       },
     }
 
