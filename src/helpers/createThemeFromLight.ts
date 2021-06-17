@@ -20,13 +20,13 @@ export const createThemeFromLight = (
         text: 'white',
       },
       primary: {
-        main: '#487fb0',
-        dark: '#1c5180',
-        light: '#92cafc',
+        main: '#005ef5',
+        dark: '#003891',
+        light: '#428bff',
         text: 'white',
       },
       secondary: {
-        main: '#40b8ae',
+        main: '#ff0059',
         dark: '#11857b',
         light: '#8aded7',
         text: 'white',
@@ -38,7 +38,7 @@ export const createThemeFromLight = (
         text: 'white',
       },
       info: {
-        main: '#71afde',
+        main: '#1f93ff',
         dark: '#3b75a1',
         light: '#96cbf2',
         text: 'white',
@@ -50,7 +50,7 @@ export const createThemeFromLight = (
         text: 'white',
       },
       error: {
-        main: '#f75145',
+        main: '#ff1414',
         dark: '#9e2118',
         light: '#e8918b',
         text: 'white',
