@@ -1,12 +1,12 @@
-import { NemuiColor, NemuiPalette, NemuiTheme } from '@/types/NemuiTheme'
+import { HasColorProp } from '@/types/HasColorProp'
+import { NemuiPalette } from '@/types/NemuiTheme'
+import { HasThemeProp } from '@/types/HasThemeProp'
+import { HasShadowProp } from '@/types/HasShadowProp'
 
 /**
  * StyledColorContext type.
  */
-export type StyledColorContext = {
-  theme?: NemuiTheme
-  color?: NemuiColor
-}
+export type StyledColorContext = HasColorProp & HasThemeProp
 
 /**
  * StyledColorGetFn type.
@@ -46,4 +46,21 @@ export function styledColor(
   return ({ theme, color }: StyledColorContext): string | undefined => {
     return theme?.palettes[color ?? 'default'][type ?? 'main']
   }
+}
+
+/**
+ * attach shadow.
+ *
+ * @param p props.
+ */
+export const shadow = (p: HasThemeProp & HasShadowProp): string => {
+  if (typeof p.shadow === 'undefined') {
+    return ''
+  }
+
+  if (typeof p.shadow === 'boolean') {
+    return p.shadow ? p.theme.shadow(1) : ''
+  }
+
+  return p.theme.shadow(p.shadow)
 }
