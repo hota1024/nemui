@@ -19,8 +19,10 @@ type RippleState = {
 }
 
 const rippleAnimation = keyframes`
+  from {
+    transform: scale(1);
+  }
 	to {
-		transform: scale(15);
 		opacity: 0;
 	}
 `
@@ -53,6 +55,9 @@ export const useRipples = (): [AddRippleFn, React.ReactNodeArray] => {
       100
     )
     const radius = size / 2
+    const scale =
+      (Math.max(currentTarget.clientWidth, currentTarget.clientHeight) / size) *
+      2
 
     const ripple: RippleState = {
       key: event.timeStamp,
@@ -61,6 +66,7 @@ export const useRipples = (): [AddRippleFn, React.ReactNodeArray] => {
         height: size,
         left: x - radius,
         top: y - radius,
+        transform: `scale(${scale})`,
       },
     }
 
