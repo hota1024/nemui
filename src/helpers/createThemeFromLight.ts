@@ -26,27 +26,15 @@ export const createThemeFromLight = (
         text: 'white',
       },
       secondary: {
-        main: '#ff0059',
-        dark: '#11857b',
-        light: '#8aded7',
-        text: 'white',
-      },
-      success: {
-        main: '#5ecc62',
-        dark: '#2f9632',
-        light: '#85ed89',
-        text: 'white',
-      },
-      info: {
-        main: '#1f93ff',
-        dark: '#3b75a1',
-        light: '#96cbf2',
+        main: '#3edea0',
+        dark: '#33b583',
+        light: '#6dedbc',
         text: 'white',
       },
       warning: {
-        main: '#f7bf45',
-        dark: '#c99116',
-        light: '#ffdd94',
+        main: '#ffbf00',
+        dark: '#b58800',
+        light: '#ffde7d',
         text: 'white',
       },
       error: {

@@ -45,8 +45,6 @@ export type NemuiColor =
   | 'default'
   | 'primary'
   | 'secondary'
-  | 'success'
-  | 'info'
   | 'warning'
   | 'error'
 
